@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    margin-top: -25px;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0.15);
+    height: 100px;
+    z-index: 999;
+
+}
+
+nav img {
+    margin-top: 20px;
+    width: 160px;
+    height: 70px;
+    cursor: pointer;
+
+
+}
+
+nav .navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+
+
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: aqua;
+
+}
+
+/* Home */
+
+#home {
+    background-image: linear-gradient(rgb(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('img2/Uni-Life.webp');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+#home .btn{
+    margin-top: 25px;
+}
+
+#home h2 {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+#home a.blue{
+    transition: 0.5s ease;
+   
+    background-color: whitesmoke;
+}
+#home a.blue:hover{
+    color: white;
+    background-color: rgb(110, 85, 173);
+}
+
+#home a .yellow{
+    transition: 0.5s ease;
+    background-color: whitesmoke;
+}
+#home a.yellow:hover{
+    color: white;
+    background-color: rgb(110, 85, 173);
+}
+
+/* features */
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-top: 40px;
+}
+#features .fea-box{
+    background-color: white;
+    text-align: start;
+    margin: 3rem;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(44, 44, 80);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+    
+}
+
+/* courses */
+
+#courses{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#courses h1{
+    font-family:  sans-serif;
+    color: rgb(8, 8, 96);
+}
+#courses .course-box{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   margin-top: 50px;
+}
+#courses .courses{
+    text-align: start;
+    background-color: white;
+    height: 100%;
+    margin: 10px;
+    
+}
+#courses .courses img{
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+#courses .courses .details i{
+     color: rgb(219, 219, 30);
+     font-size: .9rem;
+}
+
+/* registration */
+
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgb(81, 91, 233, 0.5)), url("img/Studying-9-Scientifically-Proven-Ways-to-Supercharge-Your-Learning.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+#registration .reminder{
+    color: white;
+}
+#registration .reminder h1{
+    color: white;
+}
+#registration .reminder .time{
+    display: flex;
+    margin-top: 30px;
+}
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+#registration .form{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+#registration .form input{
+       margin: 15px 10px 0px 10px;
+       padding: 10px 10px;
+       border-radius: 1px solid rgb(84, 40, 241);
+       outline: none;
+}
+#registration .form a button{
+    border: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(103, 246, 196);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+
+}
+#registration .form a button:hover{
+    color:  black;
+    background: rgb(167, 112, 145);
+
+}
+
+/* expert */
+
+#expert{
+    text-align: center;
+    padding: 8vw 8vw 0 8vw;
+}
+#expert h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 2px solid rgb(22, 24, 23);
+  color: rgb(11, 11, 11);
+}
+
+
+#expert .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+}
+#expert .profile img{
+    width: 180px;
+    height: 200px;
+    border-radius: 50px;
+}
+.pro-links{
+    margin-top: 6px;
+
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1.5px solid rgb(36, 69, 98);
+    cursor: pointer;
+    color: rgb(27, 139, 139);
+    border-radius: 15px;
+    font-size: 20px;
+    
+}
+.pro-links i:hover{
+    background-color: rgb(83, 44, 191);
+    color: white;
+}
+
+/* footer */
+
+footer{
+    padding: 8vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    
+    
+}
+footer .footer-col a{
+   color: #fff;
+   text-decoration: none;
+}
+footer h1{
+    color: #d3ab3c;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-family:sans-serif;
+
+}
+footer li{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+footer .footer-news{
+    margin-left: 50px;
+      
+}
+footer .footer-news p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+footer input{
+    width: 150px;
+    padding: 15px 12px;
+    background: white;
+    border: none;
+    outline: none;
+}
+footer .subscribe a{
+    text-decoration:none ;
+    font-size: 0.9rem;
+    padding: 13px 15px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+footer .subscribe a.yellow{
+    color: white;
+    background: #fDC93b;
+    
+}
+
+
+
+.footer-link{
+    width: 350px;
+    margin-left: -50px;
+
+   
+}
+
+.footer-link h2 {
+    color: #fff;
+    text-align: left;
+}
+
+.footer-link p {
+    color: #fff;
+    line-height: 20px;
+    
+}
+
+footer .footer-news iframe{
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width:670px) {
+    footer{
+        width: fit-content;
+    }
+    .footer-link{
+        margin-left: -20px;
+    }
+    .footer-link p{
+        width: 200px;
+    }
+    .footer-news a{
+        background-color: black;
+    }
+    #registration{
+       
+        width: fit-content;
+          
+    }
+    #home {
+       
+    width:750px ;
+     text-align: center;
+    }
+    #expert .profile{
+      margin: 10px;
+    }
+    
+  }
